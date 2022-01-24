@@ -1,0 +1,480 @@
+ /*****************************************
+ Partie Romain
+ *****************************************/
+ 
+ html, body
+{
+	background-color:white;
+	background:url("./images/logo.JPG");
+	background-position: center;
+  margin:0px;
+	height:100%;
+	overflow:hidden;
+  z-index:1;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  list-style-type: none;
+  background-color: white;
+  margin: 0;
+  box-shadow: 0px 15px 10px -15px #818181; 
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+.navbar a:hover {
+  background-color: #111;
+  color: white;
+}
+  
+/* SIDENAV */
+  
+.sidenav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.sidenav.active {
+  transform: translateX(0);
+}
+.sidenav li {
+  color: black;
+}
+
+.sidenav a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem;
+}
+.sidenav a:hover {
+  background-color: #111;
+  color: white;
+}
+  
+/* BUTTON */
+.sidenav-trigger {
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  outline-style: none;
+  width: fit-content;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  word-wrap: normal;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+  
+@media screen and (min-width: 690px) {
+  .navbar {
+    display: flex;
+  }
+  .sidenav {
+    display: none;
+  }
+  .sidenav-trigger {
+    display: none;
+  }
+}
+  
+@media screen and (max-width: 689px) {
+  .navbar li{
+    display: none;
+  }
+  .navbar {
+   justify-content: center;
+  }
+  .sidenav {
+    display: flex;
+  }
+}
+
+#contenu
+{
+	background-color:white;
+	opacity:1;
+	animation: apparition 2s;
+  margin:0 auto;
+  padding-top: 0%;
+  height: 90.75%;
+  z-index:2;
+  overflow-y: scroll;
+}
+
+#contenu_sport
+{
+  background-color:white;
+	opacity:1;
+	animation: apparition 2s;
+  margin:0 auto;
+  padding-top: 0%;
+  height: 90.75%;
+  z-index:2;
+  overflow-y: scroll;
+}
+
+#contenu_intro
+{
+	background-color:white;
+	opacity:1;
+	animation: apparition 5s;
+  margin:0 auto;
+  height: 90.75%;
+  z-index:2;
+  overflow-y: scroll;
+}
+
+h1
+{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-block-start: 0em;
+  text-align: center;
+}
+
+h2
+{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 20px;
+  margin-block-start: 2em;
+  text-align: left;
+}
+
+p
+{
+  margin-left: 30px;
+}
+
+li
+{
+  margin-left: 10px;
+  list-style-type: none;
+}
+
+header
+{
+  animation: apparition 5s;
+}
+
+@keyframes apparition{
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#haut-page
+{
+  margin: 0 auto;
+  width: 100%;
+  background-color: black;
+  padding: 0%;
+}
+
+#haut-page h1
+{
+  color: white;
+}
+
+@media screen and (max-width: 999px)
+{
+  #image
+  {
+    display: none;
+  }
+}
+
+#image
+  {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    position: relative;
+  }
+
+  img
+  {
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+#hist table
+{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+	background:lightgrey;
+	border:2px solid 25px black;
+  border-collapse:collapse;
+}
+
+#hist table caption
+{
+	background:lightgrey;
+  border:2px solid black;
+	border-bottom:none;
+  padding:9px;
+  font-size:150%;   
+  font-weight:bold;
+  color:black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+#hist table th
+{
+  background:lightgrey;
+}
+
+#hist table td, #hist table th
+{
+	border: 1px solid black;
+	padding:9px 27px;
+}
+
+#video{
+  text-align: center;
+}
+
+iframe{
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+#tab_sport
+{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: x-small;
+}
+
+footer
+{
+  width: 100%;
+  height: -webkit-fill-available;
+  background-color: black;
+  text-align: center;
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  position: fixed;
+  animation: apparition 2s;
+}
+
+#footer
+{
+  animation: apparition 5s;
+}
+
+footer a, #footer a
+{
+  color: white;
+} 
+
+a
+{
+  color: rgb(253, 190, 74);
+}
+
+#contenu_sport table
+{
+  display: table;
+  border-collapse: separate;
+  border-spacing: 25px;
+  border-color: #333;
+  margin: 0 auto;
+}
+
+#contenu_sport table th
+{
+  border-bottom: solid;
+}
+
+#block
+{
+  background-color: whiye;
+  margin: 10px;
+  color: black;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 15px 15px 10px -15px black; 
+}
+
+#block:hover{
+  box-shadow: 20px 25px 10px -15px black; 
+}
+
+#text_sponsor1
+{
+  margin-left: 5px;
+  text-align: left;
+  width: 80%;
+  display: inline-block;
+}
+
+#logo_sponsor1
+{
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 20%;
+  text-align: right;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+#text_sponsor2
+{
+  margin-right: 5px;
+  text-align: right;
+  width: 80%;
+  display: inline-block;
+}
+
+#logo_sponsor2
+{
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 20%;
+  text-align: left;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+#contact
+{
+  margin-top: 100px;
+  color: black;
+  text-align: center;
+}
+
+form
+{
+  margin-top: 50px;
+}
+
+#form-control
+{
+  width: 70%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input
+{
+  height: 45px;
+  background-color: lightgray;
+  width: 70%;
+  border: transparent;
+}
+
+form #submit
+{
+  background-color: black;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  transition: 0.4s ease;
+}
+
+form #submit:hover
+{
+  background-color: black;
+  cursor: pointer;
+}
+
+::placeholder
+{
+  color: darkgray;
+}
+
+/***************************************************
+Partie Paul-Antoine
+***************************************************/
+
+
+#menu-deroulant, #menu-deroulant ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+  text-align: center;
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+  display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+  display: inherit;
+}
+#menu-deroulant a {
+  font-size: 25px;
+  text-decoration: none; 
+  border: #000;
+  display: block;
+	color: black;
+}
+#menu-deroulant ul {
+  position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+  left: -999em;
+  text-align: left;
+  z-index: 1000;
+}
+
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+  left: auto;
+}
+
+#menu-deroulant table
+{
+  color: black;
+}
+
