@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="./images/ordi-logo.png">
+    <title>Panier Vide</title>
+    <link rel="stylesheet" href="styleSiteVente.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./accueil.html">Accueil</a>
+            </li>
+            <li><a href="./quiSommesNous.html">Qui Sommes Nous ?</a>
+            </li>
+            <li><a href="./boutique.html">Boutique</a>
+            </li>
+            <li class="deroulant"><a href="./espaceClient.html">Espace Client</a>
+                <ul class="sous">
+                    <li><a href="./connexion.html">Connexion au compte</a></li>
+                    <li><a href="./creation.html">Création d'un compte</a></li>
+                    <li><a href="./informations.html">Information sur le compte</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="menu">
+        <div id="fil">
+            retour : <a href="./accueil.html">Accueil</a> &gt <a href="./panierVide.html">Panier Vide</a>
+        </div>
+        <nav id="nav2">
+            <ul>
+                <li class="active-deroulant"><a href="./panierVide.html">Panier Vide</a>
+                    <ul class="sous">
+                        <li><a href="./panierPlein.html">Panier Plein</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contenue">
+        <!-- mettre en forme le panier vide -->
+        <h1>Panier Vide</h1>
+        <table id="myTable">
+            <tr class="header">
+                <th>Noms</th>
+                <th>Type de produit</th>
+                <th>Prix unité</th>
+                <th>Quantités</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <p id="description">Votre panier est vide, veuillez aller à la <a href="boutique.html">boutique</a>.</p>
+    </div>
+</body>
+
+</html>

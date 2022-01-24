@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="./images/ordi-logo.png">
+    <title>Panier Plein</title>
+    <link rel="stylesheet" href="styleSiteVente.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./accueil.html">Accueil</a>
+            </li>
+            <li><a href="./quiSommesNous.html">Qui Sommes Nous ?</a>
+            </li>
+            <li><a href="./boutique.html">Boutique</a>
+            </li>
+            <li class="deroulant"><a href="./espaceClient.html">Espace Client</a>
+                <ul class="sous">
+                    <li><a href="./connexion.html">Connexion au compte</a></li>
+                    <li><a href="./creation.html">Création d'un compte</a></li>
+                    <li><a href="./informations.html">Information sur le compte</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="menu">
+        <div id="fil">
+            retour : <a href="./accueil.html">Accueil</a> &gt <a href="./panierPlein.html">Panier Plein</a>
+        </div>
+        <nav id="nav2">
+            <ul>
+                <li class="active-deroulant"><a href="./panierPlein.html">Panier Plein</a>
+                    <ul class="sous">
+                        <li><a href="./panierVide.html">Panier Vide</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contenue">
+        <!-- garder la mise en forme du panier vide et y inclure des produits -->
+        <h1>Panier Plein</h1>
+        <table id="myTable">
+            <tr class="header">
+                <th>Noms</th>
+                <th>Type de produit</th>
+                <th>Prix unité</th>
+                <th>Quantités</th>
+            </tr>
+            <tr onclick="window.location='./produit.html';">
+                <td>Legion creator 7i</td>
+                <td>PC Lenovo</td>
+                <td>1754.10 €</td>
+                <td>1</td>
+            </tr>
+            <tr onclick="window.location='https://en.wikipedia.org/wiki/GeForce_2_series';">
+                <td>GeForce 2 series</td>
+                <td>GPU NVIDIA</td>
+                <td>81.99 €</td>
+                <td>2</td>
+            </tr>
+            <tr onclick="window.location='https://fr.msi.com/Laptop/GT76-Titan-9SX/Specification';">
+                <td>MSI GT76 TITAN DT 9SG</td>
+                <td>PC MSI</td>
+                <td>6859.87 €</td>
+                <td>1</td>
+            </tr>
+            <tr class="header">
+                <th>Total</th>
+                <th>8 777.95 €</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

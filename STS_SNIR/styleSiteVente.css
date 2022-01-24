@@ -1,0 +1,309 @@
+html {
+margin : 0;
+padding: 0;
+height: 100%;
+}
+
+body {
+background-color: black;
+color: white;
+height: 100%;
+margin : 0;
+padding: 0;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+nav{
+  width: 100%;
+}
+
+a{
+  color: white;
+}
+
+#fil{
+  float: left;
+}
+
+
+#nav2{
+  width: 20%;
+  margin-left: 80%;
+}
+
+.active{
+  background-color: #4F4848;
+}
+
+nav ul{
+  list-style-type: none;
+  padding-inline-start: 0%;
+  display: flex;
+}
+
+nav ul li{
+  flex: 1 1 auto;
+  text-align: center;
+  position: relative;
+  background-color: #333;
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+}
+
+nav a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.sous{
+    display: none;
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: flex;
+    flex-flow: column wrap;
+}
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+    text-decoration: none;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.active-deroulant{
+    background-color: #4F4848;
+}
+
+.active-deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+#menu{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: large;
+}
+
+h1{
+    text-align: center;
+    border-bottom-style: ridge;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2.5%;
+}
+
+#contenue{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 0.5%;
+    min-height: 80%;
+    height: auto;
+    background-color: #4F4848;
+    min-width: 60%;
+}
+
+h2{
+    text-align: left;
+    border-bottom-style: ridge;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#accueil{
+    margin-top: 15%;
+    text-align: center;
+    letter-spacing: 200px;
+    line-height: 100px;
+}
+
+
+#contact
+{
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+}
+
+form
+{
+  margin-top: 50px;
+}
+
+#form-control
+{
+  width: 70%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input
+{
+  height: 45px;
+  background-color: #4F4848;
+  width: 70%;
+  border-color: black;
+  color: black;
+}
+
+form #submit
+{
+  background-color: black;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  transition: 0.4s ease;
+}
+
+form #submit:hover
+{
+  background-color: black;
+  cursor: pointer;
+}
+
+::placeholder
+{
+  color: black;
+}
+
+#produit{
+  text-align: justify;
+  margin-right: 25px;
+  margin-left: 25px;
+  line-height: 40px;
+}
+
+#produit-img{
+  float: left;
+  width: 50%;
+  height: 40%;
+}
+
+#produit-img img{
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 85%;
+  height: auto;
+}
+
+#composant{
+  width: 100%;
+}
+
+h4{
+  border-bottom-style: ridge;
+}
+
+/*tableau*/
+
+#myInput {
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    color: white;
+  }
+  
+  #myTable {
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color:  #333;
+  }
+
+  /*2eme partie*/
+
+  #description{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: large;
+}
+
+.userlogin{
+    margin: 15px;
+    font-size: 20px;
+    color:black;
+}
+
+.logintype{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: underline;
+    color: black;
+}
+
+.redirectionComptes{
+    text-decoration: none;
+    color:black;
+    border:solid 2px black;
+    padding: 10px;
+    margin: 3% 15%;
+    margin-top: 5%;
+    display:block;
+    text-align: center;
+}
+
+#informations
+{
+  margin-top: 100px;
+  color: black;
+  text-align: center;
+}
+
+.plan{
+  width: 80%;
+  height: 500px;
+}

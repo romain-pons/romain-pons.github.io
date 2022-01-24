@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="./images/ordi-logo.png">
+    <title>Création</title>
+    <link rel="stylesheet" href="styleSiteVente.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./accueil.html">Accueil</a>
+            </li>
+            <li><a href="./quiSommesNous.html">Qui Sommes Nous ?</a>
+            </li>
+            <li><a href="./boutique.html">Boutique</a>
+            </li>
+            <li class="active-deroulant"><a href="./creation.html">Création</a>
+                <ul class="sous">
+                    <li><a href="./espaceClient.html">Espace Client</a></li>
+                    <li><a href="./connexion.html">Connexion au compte</a></li>
+                    <li><a href="./informations.html">Informations sur le compte</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="menu">
+        <div id="fil">
+            retour : <a href="./accueil.html">Accueil</a> &gt <a href="./espaceClient.html">Espace Client</a> &gt <a
+                href="./creation.html">Création</a>
+        </div>
+        <nav id="nav2">
+            <ul>
+                <li class="deroulant"><a href="#">Panier</a>
+                    <ul class="sous">
+                        <li><a href="./panierVide.html">Panier Vide</a></li>
+                        <li><a href="./panierPlein.html">Panier Plein</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contenue">
+        <!-- créer le formulaire de création -->
+        <h1>Création d'un compte</h1>
+        <div id="contact">
+            <form>
+                <input type="email" name="email" id="form-control" placeholder="Entrez votre email" required><br>
+
+                <input type="password" name="mdp" id="form-control" placeholder="Entrez votre mot de passe"
+                    required><br>
+
+                <input type="password" name="mdp" id="form-control" placeholder="Validez votre mot de passe"
+                    required><br>
+
+                <input type="date" name="date" id="form-control" placeholder="Date de naissance" required><br>
+
+                <input type="submit" name="submit" id="form-control submit" value="Créer le compte"><br><br>
+                <p id="description">Vous avez déjà un compte? <a href="connexion.html">Se connecter</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
